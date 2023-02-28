@@ -841,11 +841,11 @@ class _show_moreState extends State<show_more> {
 //    HttpClient client = new HttpClient();
 //    String myUrl = "https://api.smartthings.com/v1/devices/${device_id}/commands";
 ////    client.post(myUrl, headers: {"Content-Type": "text/plain", HttpHeaders.authorizationHeader :
-////      "Bearer e63db500-652e-42ca-8103-54025d5493ca"}, body: json.encode(), "");
+////      ""}, body: json.encode(), "");
 //    client.postUrl(Uri.parse(myUrl)).then((HttpClientRequest request) {
 //      request.headers.add(HttpHeaders.contentTypeHeader, 'text/plain');
 //      request.headers.add(HttpHeaders.authorizationHeader,
-//          "Bearer e63db500-652e-42ca-8103-54025d5493ca");
+//          "");
 //      request.add(utf8.encode(json.encode(json_command)));
 //      return request.close(); //.timeout(const Duration(seconds: 8));
 //    }).then((HttpClientResponse response) async {
@@ -885,11 +885,11 @@ class _show_moreState extends State<show_more> {
     HttpClient client = new HttpClient();
     String myUrl = "https://api.smartthings.com/v1/devices/${device_id}/commands";
 //    client.post(myUrl, headers: {"Content-Type": "text/plain", HttpHeaders.authorizationHeader :
-//      "Bearer e63db500-652e-42ca-8103-54025d5493ca"}, body: json.encode(), "");
+//      ""}, body: json.encode(), "");
     client.postUrl(Uri.parse(myUrl)).then((HttpClientRequest request) {
       request.headers.add(HttpHeaders.contentTypeHeader, 'text/plain');
       request.headers.add(HttpHeaders.authorizationHeader,
-          "Bearer e63db500-652e-42ca-8103-54025d5493ca");
+          "YOUR TOKEN HERE");
       request.add(utf8.encode(json.encode(json_command)));
       return request.close(); //.timeout(const Duration(seconds: 8));
     }).then((HttpClientResponse response) async {
